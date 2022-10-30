@@ -11,7 +11,7 @@ contract whitelist {
         maxWhiteListedAddresses = _maxWhiteListedAddresses;
     }
 
-    function addAddressaToWhiteList() public {
+    function addAddressToWhiteList() public {
         require(
             !whiteListedAddresses[msg.sender],
             "Sender already in whitelist"
